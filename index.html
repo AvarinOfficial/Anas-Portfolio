@@ -15,23 +15,32 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ===== PAGE BACKGROUND ===== */
+/* ===== COSMIC DARK BLUE BACKGROUND ===== */
 body {
-  background-image:
-    radial-gradient(circle at top, rgba(140,0,255,0.25), transparent 60%),
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("https://cdn.discordapp.com/attachments/1458897902045757552/1458904792830181547/download_58.jpg?ex=696350b7&is=6961ff37&hm=d56d78c52dc108f4de9b77be488155029d252a41457733ee49698718e99a44ae");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: radial-gradient(circle at 20% 30%, #1e2a4d, #090b14 70%);
   color: white;
   overflow-x: hidden;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* subtle stars using pseudo-element */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: transparent url('https://cdn.pixabay.com/photo/2013/07/13/10/07/stars-158068_1280.png') repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* ===== PAGE WRAPPER ===== */
 .wrapper {
   min-height: 100vh;
   padding: 60px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== HEADER ===== */
@@ -197,23 +206,23 @@ footer {
 <section id="gallery">
   <h2>My Work</h2>
   <div class="gallery">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900179909611708/image-31.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900180354076835/image-19.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900180853325915/image-268.png">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900181197131827/image-28.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900181646049452/image-16.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182010691736/image-12.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182396829788/image-21.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182904078337/image-10.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900183411851314/image-20.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900184040734812/image-5.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900219637792852/image-3.webp">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900220577579078/image-241.png">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900221542137866/image-326.png">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900222544707665/Screenshot_20251222_174026_Gallery.jpg">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900223190368286/Screenshot_20251222_174003_Gallery.jpg">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900223781896292/Screenshot_20251222_173927_Gallery.jpg">
-    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900224272633961/Screenshot_20251222_173947_Gallery.jpg">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900179909611708/image-31.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900180354076835/image-19.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900180853325915/image-268.png" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900181197131827/image-28.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900181646049452/image-16.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182010691736/image-12.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182396829788/image-21.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182904078337/image-10.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900183411851314/image-20.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900184040734812/image-5.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900219637792852/image-3.webp" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900220577579078/image-241.png" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900221542137866/image-326.png" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900222544707665/Screenshot_20251222_174026_Gallery.jpg" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900223190368286/Screenshot_20251222_174003_Gallery.jpg" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900223781896292/Screenshot_20251222_173927_Gallery.jpg" crossorigin="anonymous" alt="">
+    <img src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900224272633961/Screenshot_20251222_173947_Gallery.jpg" crossorigin="anonymous" alt="">
   </div>
 </section>
 
@@ -249,7 +258,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Show gallery immediately on page load
+// show gallery immediately
 window.addEventListener("load", () => {
   const gallerySection = document.getElementById("gallery");
   if (gallerySection) {
