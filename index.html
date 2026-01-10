@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anas | 3D Modeller Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== GALAXY BACKGROUND ===== */
+body {
+  background-image:
+    radial-gradient(circle at top, rgba(140,0,255,0.25), transparent 60%),
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
+    url("https://cdn.discordapp.com/attachments/1458897902045757552/1458905622388146393/c98d93fe-33e9-40f4-b0e1-98c97d4fa2de.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.wrapper {
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  margin-bottom: 100px;
+  animation: fadeDown 1.2s ease;
+}
+
+header h1 {
+  font-size: 3.8rem;
+  text-shadow: 0 0 30px #b26bff;
+}
+
+header p {
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 25px 10px;
+  padding: 14px 36px;
+  border-radius: 40px;
+  background: linear-gradient(135deg,#8f00ff,#ff00d4);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 35px rgba(200,0,255,0.7);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 50px rgba(220,0,255,1);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  max-width: 1200px;
+  margin: 120px auto;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 1s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 35px;
+  text-shadow: 0 0 20px #9f7aea;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  text-align: center;
+  line-height: 2;
+  opacity: 0.9;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 18px rgba(255,255,255,0.25);
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 45px #b26bff;
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 20px;
+  box-shadow: 0 0 60px #b26bff;
+}
+
+/* ===== PRICES ===== */
+.prices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 280px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(14px);
+  text-align: center;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.06);
+  box-shadow: 0 0 45px #a855f7;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  opacity: 0.75;
+  margin-top: 140px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<header>
+  <h1>Anas</h1>
+  <p>3D Modeller • Egypt • 15 Years Old</p>
+  <a href="#gallery" class="btn">View Work</a>
+  <a href="https://discord.com/users/modeled0" class="btn">Contact Me</a>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    Hi, my name is <b>Anas</b>. I am a fast-improving 3D modeller with 1 month of experience.
+    I work on clean, detailed, and optimized models.
+  </p>
+  <p>
+    I can model <b>Swords, Vehicles, Guns, Buildings</b> and more.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>My Work</h2>
+  <div class="gallery">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900179909611708/image-31.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900180354076835/image-19.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900180853325915/image-268.png">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900181197131827/image-28.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900181646049452/image-16.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182010691736/image-12.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182396829788/image-21.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900182904078337/image-10.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900183411851314/image-20.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900184040734812/image-5.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900219637792852/image-3.webp">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900220577579078/image-241.png">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900221542137866/image-326.png">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900222544707665/Screenshot_20251222_174026_Gallery.jpg">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900223190368286/Screenshot_20251222_174003_Gallery.jpg">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900223781896292/Screenshot_20251222_173927_Gallery.jpg">
+    <img referrerpolicy="no-referrer" src="https://cdn.discordapp.com/attachments/1458897902045757552/1458900224272633961/Screenshot_20251222_173947_Gallery.jpg">
+  </div>
+</section>
+
+<section>
+  <h2>Prices</h2>
+  <div class="prices">
+    <div class="card"><h3>Robux</h3><p>500 – 5,000</p></div>
+    <div class="card"><h3>USD</h3><p>$3 – $15</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Discord: <b>modeled0</b></p>
+  <p>© 2026 Anas | 3D Modeller</p>
+</footer>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <img id="lightboxImg">
+</div>
+
+<script>
+/* SCROLL REVEAL — FIXED */
+const sections = document.querySelectorAll("section");
+
+function revealSections() {
+  sections.forEach(section => {
+    if (section.getBoundingClientRect().top < window.innerHeight - 120) {
+      section.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealSections);
+window.addEventListener("load", revealSections);
+
+/* IMAGE LIGHTBOX */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  });
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+</script>
+
+</body>
+</html>
